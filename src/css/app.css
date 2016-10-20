@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial';
+    font-size: 16px;
+}
+
+.base-component .header {
+    padding: 20px;
+    color: white;
+    background-color: #0078ef;
+}
+
+.base-component .header .title {
+    font-size: 24px;
+}
+
+.base-component .filter {
+    float: right;
+    margin-left: 40px;
+    color: white;
+    border: 1px solid white;
+    background-color: #0078ef;
+    padding: 6px 16px;
+    border-radius: 18px;
+}
+
+.base-component .nav {
+    float: right;
+}
+
+.base-component .nav > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+}
+
+.base-component .nav > li {
+    border-bottom: 4px solid transparent;
+    color: white;
+}
+
+.base-component .nav > li:hover {
+    background-color: transparent;
+    border-bottom-color: white;
+}
+
+.base-component .nav > li:hover > a {
+    background-color: transparent;
+}
+
+.base-component .nav > li > a:focus {
+    background-color: transparent;
+}
+
+.base-component .nav .active {
+    border-bottom-color: white;
+}
+
+.base-component .content-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.base-component .content-list-item {
+
+}
+
+.base-component .content-list-item:nth-child(2n) .view-item.list {
+    background-color: azure;
+}
+
+.view-item.list {
+    padding: 6px 12px;
+}
+
+.view-item.list .displayId {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.view-item.list .title {
+
+}
+
+.view-item.list .category {
+    float: right;
+}
+
+.base-component .content-list.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.base-component .content-list-item.card {
+    margin: 20px;
+}
+
+.view-item.card {
+    width: 200px;
+    height: 124px;
+    padding: 6px 12px;
+    padding-bottom: 24px;
+    position: relative;
+    border: 1px solid #0078ef;
+}
+
+.view-item.card .displayId {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    color: #0078ef;
+}
+
+.view-item.card .title {
+
+}
+
+.view-item.card .category {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+}
