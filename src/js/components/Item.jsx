@@ -14,7 +14,7 @@ class Item extends React.Component {
         return (
             <div className={classNames('view-item', { 'list': this.props.type == 'list', 'card': this.props.type == 'card' })}>
 	            <span className="displayId">{this.props.data.displayid}</span>
-	            <span className="title">{this.props.data.title}</span>
+	            <span className="title" title={this.props.data.title}>{this.props.data.title}</span>
 	            <span className="category label label-info">{this.props.data.category}</span>
             </div>
         );

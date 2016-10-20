@@ -121,7 +121,10 @@ body {
 }
 
 .view-item.card .title {
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 64px;
+    display: inline-block;
 }
 
 .view-item.card .category {
