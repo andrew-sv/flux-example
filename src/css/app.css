@@ -96,6 +96,14 @@ body {
     margin: 20px;
 }
 
+.base-component .content-list-item.card.fake {
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    visibility: hidden;
+}
+
 .view-item.card {
     width: 200px;
     height: 124px;

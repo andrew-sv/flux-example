@@ -19,10 +19,17 @@ class Content extends React.Component {
         );
     }
 
+	get data() {
+		if (this.props.type == 'card') {
+			return [].concat(this.props.data, new Array(7).fill({fake: true}));
+		} else {
+			return this.props.data;
+		}
+	}
 	get items() {
-		return this.props.data.map((item, i) => (
-			<li className={classNames("content-list-item", this.props.type)} key={i}>
-				<Item type={this.props.type} data={item} />
+		return this.data.map((item, i) => (
+			<li className={classNames("content-list-item", this.props.type, {'fake': item.fake})} key={i}>
+				<Item type={this.props.type} data={item} fake={Boolean(item.fake)} />
 			</li>
 		));
 	}
